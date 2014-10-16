@@ -145,6 +145,6 @@ h1{
 	}
 }
 
-.view{
-  @include border-radius(20px);
+.blocks {
+  @include border-radius(3px);
 }

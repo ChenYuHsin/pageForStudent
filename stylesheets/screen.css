@@ -234,8 +234,8 @@ h1 {
 }
 
 /* line 148, ../sass/screen.scss */
-.view {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
+.blocks {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }

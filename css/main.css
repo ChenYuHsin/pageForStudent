@@ -13,9 +13,6 @@ body {
   background-color: #DCDCDC;
 }
 
-h1 {
-  color: white;
-}
 
 div#all {
   width: 100%;
@@ -23,32 +20,85 @@ div#all {
 }
 
 /* generic css */
-.view {
-    margin: 40px;
-    width: 300px;
-    height: 300px;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    box-shadow:2px 2px 2px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),6px 6px 12px rgba(20%,20%,40%,0.4);
-    cursor: default;
+.blocks {
+    margin          : 20px;
+    width           : 200px;
+    height          : 200px;
+    float           : left;
+    overflow        : hidden;
+    position        : relative;
+    text-align      : center;
+    box-shadow      : 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    cursor          : default;
+    border-radius   : 10%;
+    background-color: pink;
 }
 
-.view img {
+.blocks img {
     width: 300px;
     height: 50%;
-    display: block;
+}
+
+.blocks_title{
+  font-size    : 20px;
+  margin-top   : 20px;
+  margin-bottom: 20px;
+}
+
+.blocks_text{
+    height: 50%;
+}
+
+.add{
+    background-color: gray;
+    box-shadow      : none;
 }
 
 
-.view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    font-family: Raleway, serif;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
+
+/*====Button==============================================================*/
+
+.fab {
+  position        : absolute;
+  width           : 56px;
+  height          : 56px;
+  border-radius   : 50%;
+  color           : #fff;
+  overflow        : hidden;
+  transition      : box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow      : 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  z-index         : 10;
+}
+
+.fab.green {
+  background-color: #0f9d58;
+  right           : 10px;
+  top             : 50%;
+  margin-top      : -28px;
+}
+
+.fab.gray {
+  background-color: #CCCCCC;
+  position        : absolute;
+  left            : 50%;
+  margin-left     : -28px;
+  top             : 50%;
+  margin-top      : -28px;
+  box-shadow      : none;
+
+}
+
+
+.fab:active {
+  box-shadow      : 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  transition-delay: 0s;
+}
+
+.fab > core-icon {
+  margin: 16px;
+}
+
+.fab > core-icon::shadow path {
+  fill: #fff;
 }

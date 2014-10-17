@@ -1,8 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
 header{
-  font-size: 20px;
-  background-color: #94C2CF;
-  height: 50px;
-  margin-bottom: 20px;
+  font-size       : 20px;
+  background-color: #0F9D58;
+  height          : 50px;
+  margin-bottom   : 20px;
 }
 
 html {
@@ -11,12 +13,23 @@ html {
 
 body { 
   background-color: #DCDCDC;
+  font-family: "Roboto";
+}
+
+.blocks img{
+  opacity: 0.7;
+}
+
+.img_container{
+  height: 100%;
+  background-color: white;
 }
 
 
 div#all {
   width: 100%;
   height: 100%;
+  margin: auto;
 }
 
 /* generic css */
@@ -27,11 +40,10 @@ div#all {
     float           : left;
     overflow        : hidden;
     position        : relative;
-    text-align      : center;
-    box-shadow      : 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    box-shadow      : 6px 6px 11px 0px rgba(0,0,0,0.67);
     cursor          : default;
     border-radius   : 10%;
-    background-color: pink;
+    background-color: #F1EBE4;
 }
 
 .blocks img {
@@ -40,13 +52,14 @@ div#all {
 }
 
 .blocks_title{
+  padding-top  : 20px;
   font-size    : 20px;
-  margin-top   : 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .blocks_text{
-    height: 50%;
+    height: 100px;
+    padding-left: 20px;
 }
 
 .add{
